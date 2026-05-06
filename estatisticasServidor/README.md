@@ -36,4 +36,4 @@ Cada linha contém um resgistro do dia atual seguido pelo uso de CPU, por exempl
 
 ## [roadmap.sh](https://roadmap.sh/projects/server-stats)
 
-Este projeto faz parte do Devops Projects - [roadmap.sh](https://roadmap.sh/projects/server-stats)
+Este projeto faz parte do Devops Projects - https://roadmap.sh/projects/server-stats
