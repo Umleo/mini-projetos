@@ -11,4 +11,5 @@ Cada pasta dentro deste repositório representa uma aplicação independente com
 
 | Projeto | Tecnologia | Descrição | Status |
 | :--- | :--- | :--- | :--- |
-| **`saudacoesWord`** | JavaScript / API | Saudação dinâmica baseada no IP do utilizador. | ✅ Lógica / 🚧 UI/UX |
+| **[`saudacoesWord`](https://github.com/Umleo/mini-projetos/tree/main/saudacoesWorld)**| JavaScript / API | Saudação dinâmica baseada no IP do utilizador. | ✅ Lógica / 🚧 UI/UX |
+|**[`estatisticasServidor`](https://github.com/Umleo/mini-projetos/tree/main/estatisticasServidor)**| Shell Script / Linux | Status da máquina. | ✅ Finalizado|
