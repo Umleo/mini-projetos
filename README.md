@@ -1,4 +1,4 @@
-# Laboratório de Estudos: Aplicações Académicas
+# Laboratório de Estudos: Aplicações Acadêmicas
 
 Este repositório é um **monorepo** dedicado ao armazenamento de pequenos projetos. O objetivo principal é documentar a evolução da minha lógica de programação e o domínio de diferentes tecnologias.
 Para saber mais informações sobre cada projeto, acesse o respectivo diretório e leia info.md.
