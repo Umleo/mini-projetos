@@ -19,7 +19,7 @@ docker build -t oladocker .
 ### 3. Execute o container
 
 ```bash
-docker run -d -e var=Leonardo -p 8087:80 oladocker:latest
+docker run -d -e var=seunome -p 8087:80 oladocker:latest
 ```
 
 ---
