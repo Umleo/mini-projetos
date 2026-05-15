@@ -19,10 +19,10 @@ Trabalhar com argumentos em um shell script
 chmod u+x logArchive.sh
 ```
 
-3. Execute o monitor:
+3. Execute o script:
 
 ```bash
-./logArchive.sh
+./logArchive DIRETÓRIO DESTINO(opcional)
 ```
 
 ## [roadmap.sh](https://roadmap.sh/projects/log-archive-tool)

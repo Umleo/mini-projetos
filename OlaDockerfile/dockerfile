@@ -1,0 +1,23 @@
+#importamos a imagem nginx:alpine
+FROM nginx:alpine
+
+#executamos um comando para limpar o html default do nginx
+RUN rm -rf /usr/share/nginx/html/*
+
+#trocamos para o diretório nginx
+WORKDIR /usr/share/nginx/html
+
+#copio o /app da minha aplicação para o dir nginx
+COPY ./app .
+
+#expõe a porta 80 do container
+EXPOSE 80
+
+#executa sed trocando valor coringa por variavel definida na execução do container
+#nginx -g 'daemon off;' - mantém o Nginx em foreground
+#"sh" - para executar o comando através do shell
+#"-c" - para executar o comando no terminal do container de maneira não literal
+CMD ["sh", "-c", "sed -i 's/XXXX/'${var}'/g' index.html && nginx -g 'daemon off;'"]
+
+#docker build -t oladocker .
+#docker run -d -e var=Leonardo -p 8087:80 oladocker:latest

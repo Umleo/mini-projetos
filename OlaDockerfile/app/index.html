@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Vindo - Docker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="stars"></div>
+        
+        <div class="content">
+            <div class="welcome-box">
+                <h1 class="welcome-text">
+                    <span class="word">Bem</span>
+                    <span class="word">-</span>
+                    <span class="word">Vindo</span>
+                    <span class="word highlight">XXXX</span>
+                    <span class="word">!!</span>
+                </h1>
+                
+                <div class="animated-border"></div>
+                
+                <p class="subtitle">Explore o poder do Docker</p>
+                
+            </div>
+            
+            <div class="floating-elements">
+                <div class="circle circle-1"></div>
+                <div class="circle circle-2"></div>
+                <div class="circle circle-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Adiciona interatividade ao mover o mouse
+        document.addEventListener('mousemove', (e) => {
+            const circles = document.querySelectorAll('.circle');
+            circles.forEach(circle => {
+                const x = (window.innerWidth - e.clientX * 0.5) / 100;
+                const y = (window.innerHeight - e.clientY * 0.5) / 100;
+                circle.style.transform = `translate(${x}px, ${y}px)`;
+            });
+        });
+
+        // Efeito de digitação
+        const welcomeText = document.querySelector('.welcome-text');
+        const originalHTML = welcomeText.innerHTML;
+        welcomeText.innerHTML = '';
+        
+        const words = originalHTML.split('</span>');
+        let index = 0;
+        
+        function typeWords() {
+            if (index < words.length) {
+                welcomeText.innerHTML += words[index] + '</span>';
+                index++;
+                setTimeout(typeWords, 100);
+            }
+        }
+        
+        setTimeout(typeWords, 500);
+    </script>
+</body>
+</html>

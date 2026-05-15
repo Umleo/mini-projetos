@@ -8,10 +8,6 @@ if [ -z "$1" ];then
     exit 1
 fi
 
-if [ ! -d "$1" ]; then
-    echo "Error: Diretório não encontrado."
-    exit 1
-fi
 
 #caso variavel especial ($1) for --help:
 case "$1" in
@@ -22,6 +18,12 @@ case "$1" in
     exit 1
     ;;
 esac
+
+
+if [ ! -d "$1" ]; then
+    echo "Error: Diretório não encontrado."
+    exit 1
+fi
 
 
 data=$(date +"%Y%m%d"-"%H%M%S")
